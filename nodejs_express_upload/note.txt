@@ -1,0 +1,16 @@
+var express = require('express'); //Declare the express library
+
+var app = express();  //create a app variable from express object
+
+app.get('/', function (req, res) {   //get http request for display Welcome message
+   res.send('<h1>Welcome to Antrorse.</h1>');  
+
+})  
+
+var server = app.listen(8000, function () {  // it returns the some manual adding port numbers with url
+var host = server.address().address  //server address [localhost]
+console.log(host);// :: -> Localhost 
+var port = server.address().port  //server port[on specific number the web app run]
+ console.log("Example app listening at http://%s:%s", host, port)   //server ip or port
+
+}) 

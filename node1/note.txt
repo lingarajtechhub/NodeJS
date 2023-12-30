@@ -1,0 +1,67 @@
+Node.js is an opensource server environment.
+
+It allows you to run JavaScript on the server.
+
+Its developed by Rahn Dhal. 2010 is first release version.
+
+deno.js it also helps u run JS on the server.
+
+variaous platforms like windows, linux, macOS, solaries.
+
+It is open source.
+
+Node.js uses asynchronous programming. [MERN] Handlebar.js, pug.js, 
+
+How node.js handles a file request:
+
+1. sends the task to the computer's file system.
+2. Ready to handle the next request.
+3. When the file system has opened and read the 
+file the server returns the content to the client.
+
+node.js eliminates the waiting, and simply continues with the next request.
+Node.js runs single threaded, non-blocking, asynchronous programming.
+
+What can node do?
+
+Nodejs can generate dynamic page content.
+Node.js can create, open, read, write, delete and close files on the server.
+Node.jscan add,delete, modify data in database.
+
+What can node File Do?
+Node files contain tasks that will be executed on certain events.
+A typical event is someone trying to access a port on the server.
+Node is files must be  initiated on the server before having any effect.
+Node files have extension ".js"
+
+
+
+npm init => creating package.json
+
+express.js
+
+a package in node.js contains all the files you need for a module.
+
+modules are js libraries you can include in your project.
+
+npm install upper-case
+
+Node.js is perfect for event-driven applications
+
+What is events in Node.js
+
+Every Action on a computer is an event. Like when a connection is made or 
+a file is opened.
+
+Objects in Node.js can fire events, like the readStream object fires events when openin
+and closing a file.
+
+Inside node.js there is built-in-modules are there called "Events".
+Where you can create, fire, and listen for your own.
+
+import {events} form 'events';
+
+you can assign event handlers to your own events with the EventEmitter object.
+
+"hello" event which will be fired with a emit() method.
+

@@ -1,0 +1,93 @@
+nodemailer module makes it easy to send emails from your computer.
+
+The nodemailer module can be downloadable and installed using npm.
+
+after download you have to import nodemailer like this,
+
+var nodemail = require('nodemailer');
+
+
+Mysql is a very popular database and we work on child of mysql i.e. mariaDB.
+
+npm i mysql
+
+var mysql = require('mysql');
+
+Create a connection
+
+var con = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: ""
+});
+
+con.connect(function(err) {
+    if(err) throw err;
+    console.log("Connected! ");
+});
+
+nodenom connectDB.js
+
+Create database
+
+con.connect(async function(err){
+    if(err) throw err;
+    console.log("Connected!);
+    await con.query("CREATE DATABASE myDB", function(err, result){
+        if(err) throw err;
+        console.log("Database Created");
+    })
+})
+
+Create A Table
+
+
+con.connect(async function(err){
+    if(err) throw err;
+    console.log("Connected!);
+    var sql = "CREATE Table Employee (empID INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), address VARCHAR(255))";
+    await con.query(sql, function(err, result){
+        if(err) throw err;
+        console.log("Table Is Created");
+    })
+})
+
+Insert a Records in a Table
+
+
+con.connect(async function(err){
+    if(err) throw err;
+    console.log("Connected!);
+    var sql = "INSERT INTO Employee (name, address) VALUES ('QWERTY','QW-T/2')";
+    await con.query(sql, function(err, result){
+        if(err) throw err;
+        console.log("Insert Record Successfully.");
+    })
+})
+
+
+con.connect(async function(err){
+    if(err) throw err;
+    console.log("Connected!);
+    var values = "[
+        ('Rohit','QW-T/3'),
+        ('Kumar','ST-G/2'),
+        ('Mohit','MG-5/2')
+    ]";
+    var sql = "INSERT INTO Employee(name, address) VALUES ?" => prepared statements
+    await con.query(sql, [values], function(err, result){
+        if(err) throw err;
+        console.log("Insert Record Successfully.");
+    })
+})
+
+
+const form = formidable({});
+ 
+var oldpath = files.filetoupload[0].filepath;
+var newpath =
+          "D/node2/" +
+          files.filetoupload[0].originalFilename;
+
+
+https://pastebin.com/AwUzqwKM
